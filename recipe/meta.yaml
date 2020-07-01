@@ -1,5 +1,5 @@
 {% set name = "shtab" %}
-{% set version = "1.0.4" %}
+{% set version = "1.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f3893de929d1d72485cb42442d05ba645a038572617a6166490a22592c67d31f
+  sha256: 398edac1a96dced614aa89e4b68bd8503418dd9e01ee4c6652d5ac01f75a455e
 
 build:
   noarch: python
@@ -20,8 +20,10 @@ requirements:
   host:
     - python
     - pip
+    - setuptools_scm
   run:
     - python
+    - setuptools_scm
 
 test:
   imports:
