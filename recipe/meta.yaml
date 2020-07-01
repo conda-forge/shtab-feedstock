@@ -17,13 +17,13 @@ build:
     - shtab = shtab.main:main
 
 requirements:
-  build:
-    - setuptools_scm
   host:
     - python
     - pip
+    - setuptools_scm
   run:
     - python
+    - setuptools_scm
 
 test:
   imports:
