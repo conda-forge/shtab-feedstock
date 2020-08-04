@@ -1,5 +1,5 @@
 {% set name = "shtab" %}
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e119e01a108df70ed50b0fe7123b239d6dd6226475f8c79d4c0c0ffdde6b96d0
+  sha256: d4e4679b942f907500cfb91b7506c43998ad2e4773cfa1757f28cff28ff968c7
 
 build:
   noarch: python
