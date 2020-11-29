@@ -5,7 +5,7 @@ Home: https://github.com/iterative/shtab
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/shtab-feedstock/blob/master/LICENSE.txt)
 
 Summary: Automatically generate shell tab completion scripts for python CLI apps
 
