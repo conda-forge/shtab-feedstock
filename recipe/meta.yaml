@@ -11,19 +11,19 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - shtab = shtab.main:main
 
 requirements:
   host:
-    - python >=2.7
+    - python >=3.7
     - pip
     - setuptools_scm >=3.4
     - toml
   run:
-    - python >=2.7
+    - python >=3.7
 
 test:
   imports:
