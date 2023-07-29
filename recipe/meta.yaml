@@ -11,19 +11,19 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - shtab = shtab.main:main
 
 requirements:
   host:
-    - python >=2.7
+    - python >=3.7
     - pip
     - setuptools_scm >=3.4
     - toml
   run:
-    - python >=2.7
+    - python >=3.7
 
 test:
   imports:
@@ -37,9 +37,9 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENCE
-  summary: Automatically generate shell tab completion scripts for python CLI apps
+  summary: Automagic shell tab completion for Python CLI applications
   description: |
-    - What: Automatically generate shell tab completion scripts for python CLI apps
+    - What: Automatically generate shell tab completion scripts for Python CLI apps
     - Why: Speed & correctness. Alternatives like `argcomplete` & `pyzshcomplete` are slow and have side-effects
     - How: `shtab` processes an `argparse.ArgumentParser` object to generate a tab completion script for your shell
 
