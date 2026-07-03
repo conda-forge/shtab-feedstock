@@ -3,25 +3,27 @@ About shtab-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/shtab-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/iterative/shtab
+Home: https://tqdm.github.io/shtab
 
-Package license: Apache-2.0
+Package license: MPL-2.0
 
 Summary: Automagic shell tab completion for Python CLI applications
+
+Development: https://github.com/tqdm/shtab
 
 - What: Automatically generate shell tab completion scripts for Python CLI apps
 - Why: Speed & correctness. Alternatives like `argcomplete` & `pyzshcomplete` are slow and have side-effects
 - How: `shtab` processes an `argparse.ArgumentParser` object to generate a tab completion script for your shell
 
-
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10052&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/shtab-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/shtab-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/shtab-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -148,6 +150,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@0x2b3bfa0](https://github.com/0x2b3bfa0/)
 * [@casperdcl](https://github.com/casperdcl/)
 * [@efiop](https://github.com/efiop/)
 * [@shcheklein](https://github.com/shcheklein/)
