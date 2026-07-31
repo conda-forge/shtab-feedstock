@@ -152,6 +152,5 @@ Feedstock Maintainers
 
 * [@0x2b3bfa0](https://github.com/0x2b3bfa0/)
 * [@casperdcl](https://github.com/casperdcl/)
-* [@efiop](https://github.com/efiop/)
 * [@shcheklein](https://github.com/shcheklein/)
 
