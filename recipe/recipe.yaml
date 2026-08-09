@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.9.3"
+  version: "1.10.0"
 
 package:
   name: shtab
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/shtab/shtab-${{ version }}.tar.gz
-  sha256: 76d9b980cb7fca90b808380f9f1d251f37891d1abc30e1d63f6bde030f804c02
+  sha256: 70ccd485d8b38d9458c42b4e911a3d29a685dbea4b9aa7ea2d03ebe1a6e6e94f
 
 build:
   number: 0
