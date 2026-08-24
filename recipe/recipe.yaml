@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.11.0"
+  version: "1.12.0"
 
 package:
   name: shtab
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/shtab/shtab-${{ version }}.tar.gz
-  sha256: 57df8a646484b3f00517a42934b173554f827976a77b605ceb6a1a0e649e9266
+  sha256: 46d0b07e6820e3eaaaf95e437a6e89f66a6141dd8bd92da15321939ac692d44d
 
 build:
   number: 0
@@ -37,19 +37,21 @@ tests:
       python_version:
         - ${{ python_min }}.*
         - "*"
-  - files:
+  - script:
+      - shtab -h
+      - shtab -u shtab.main.get_main_parser
+      - env PYTHONPATH=. pytest
+    files:
       source:
         - tests
+        - examples
         - pyproject.toml
     requirements:
       run:
-        - pytest >=6.0
+        - pytest >=6
         - pytest-cov
+        - click
         - python ${{ python_min }}.*
-    script:
-      - shtab -h
-      - shtab -u shtab.main.get_main_parser
-      - pytest
 
 about:
   license: MPL-2.0
