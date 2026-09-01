@@ -12,7 +12,7 @@ source:
   sha256: 46d0b07e6820e3eaaaf95e437a6e89f66a6141dd8bd92da15321939ac692d44d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-build-isolation --no-deps
   python:
@@ -40,7 +40,7 @@ tests:
   - script:
       - shtab -h
       - shtab -u shtab.main.get_main_parser
-      - env PYTHONPATH=. pytest
+      - pytest
     files:
       source:
         - tests
