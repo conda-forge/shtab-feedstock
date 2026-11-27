@@ -4,6 +4,7 @@ bot:
 github:
   branch_name: main
   tooling_branch_name: main
+  repo_name: shtab-feedstock # fix as per https://github.com/conda-forge/conda-smithy/pull/2481
 conda_build:
   pkg_format: '2'
 conda_build_tool: rattler-build
